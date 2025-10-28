@@ -1,16 +1,134 @@
-# React + Vite
+# Home Service Business Template Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive React website template designed specifically for home service businesses. Built with React Router for seamless navigation and featuring a professional design system with CSS variables for easy customization.
 
-Currently, two official plugins are available:
+## 🏠 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Responsive Design**: Mobile-first approach with CSS Grid and Flexbox
+- **React Router**: Multi-page navigation with smooth transitions
+- **Modern UI**: Clean, professional design with hover effects and animations
+- **CSS Variables**: Centralized theming system for easy customization
+- **Accessibility**: Proper focus states, semantic HTML, and screen reader support
+- **Mobile Navigation**: Hamburger menu for mobile devices
+- **Form Handling**: Contact form with validation and state management
 
-## React Compiler
+## 📄 Pages Included
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Home Page
+- Hero section with call-to-action buttons
+- Services showcase (Residential, Commercial, Renovation, Design)
+- Company statistics and achievements
+- Call-to-action section
 
-## Expanding the ESLint configuration
+### About Us Page
+- Company story and mission
+- Team member profiles
+- Certifications and licenses
+- Values and mission statements
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Projects Page
+- Project filtering by category
+- Project showcase with details
+- Project statistics
+- Interactive project cards
+
+### Contact Page
+- Contact form with validation
+- Company contact information
+- Business hours and location
+- FAQ section
+
+## 🎨 Design System
+
+### Color Palette
+- **Primary**: Deep blue (`#1a365d`) - Professional, trustworthy
+- **Secondary**: Orange (`#ed8936`) - Energy, construction industry standard
+- **Neutrals**: Gray scale for text and backgrounds
+- **Accents**: Blue, green, red for status indicators
+
+### Typography
+- **Primary Font**: Inter (system fonts fallback)
+- **Heading Font**: Poppins (system fonts fallback)
+- **Responsive**: Scales appropriately across devices
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js (version 14 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone or download this template
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and navigate to `http://localhost:5173`
+
+### Building for Production
+
+```bash
+npm run build
+```
+
+The built files will be in the `dist` directory, ready for deployment.
+
+## 🛠️ Customization
+
+### Updating Content
+- **Company Information**: Edit the content in each page component (`src/pages/`)
+- **Navigation**: Modify `src/components/Navigation.jsx`
+- **Colors**: Update CSS variables in `src/styles/variables.css`
+- **Styling**: Each page has its own CSS file for easy maintenance
+
+### Adding New Pages
+1. Create a new component in `src/pages/`
+2. Add the corresponding CSS file
+3. Update the router in `src/App.jsx`
+4. Add navigation link in `src/components/Navigation.jsx`
+
+### Branding
+- Replace placeholder content with your business information
+- Update colors in `src/styles/variables.css`
+- Add your logo to the navigation component
+- Customize the hero sections with your business messaging
+
+## 📱 Responsive Breakpoints
+
+- **Mobile**: < 480px
+- **Tablet**: 480px - 768px
+- **Desktop**: > 768px
+
+## 🎯 Perfect For
+
+- Construction companies
+- Home renovation services
+- Plumbing services
+- Electrical contractors
+- HVAC companies
+- Landscaping businesses
+- General contractors
+- Any home service business
+
+## 📦 Technologies Used
+
+- **React 19** - Modern React with hooks
+- **React Router DOM** - Client-side routing
+- **Vite** - Fast build tool and dev server
+- **CSS3** - Modern CSS with Grid, Flexbox, and custom properties
+- **ESLint** - Code linting and formatting
+
+## 📄 License
+
+This template is free to use for personal and commercial projects. Feel free to modify and customize it for your business needs.
+
+## 🤝 Support
+
+For questions or support with this template, please refer to the React and Vite documentation or create an issue in the project repository.
