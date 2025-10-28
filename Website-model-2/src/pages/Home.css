@@ -3,6 +3,42 @@
   padding-top: var(--header-height);
 }
 
+/* Scroll-triggered Animations */
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.scroll-animate.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-animate.fade-in-left {
+  transform: translateX(-30px);
+}
+
+.scroll-animate.fade-in-left.animate-in {
+  transform: translateX(0);
+}
+
+.scroll-animate.fade-in-right {
+  transform: translateX(30px);
+}
+
+.scroll-animate.fade-in-right.animate-in {
+  transform: translateX(0);
+}
+
+.scroll-animate.fade-in-scale {
+  transform: scale(0.9);
+}
+
+.scroll-animate.fade-in-scale.animate-in {
+  transform: scale(1);
+}
+
 /* Hero Section */
 .hero {
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
@@ -121,6 +157,22 @@
   border: 1px solid var(--gray-200);
 }
 
+.service-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.service-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.service-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.service-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
 .service-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-xl);
@@ -161,6 +213,22 @@
   text-align: center;
 }
 
+.stat-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.stat-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.stat-item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.stat-item:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
 .stat-number {
   font-family: var(--font-family-heading);
   font-size: var(--text-5xl);
@@ -194,6 +262,18 @@
   border: 1px solid var(--gray-200);
   transition: all var(--transition-normal);
   position: relative;
+}
+
+.review-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.review-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.review-card:nth-child(3) {
+  animation-delay: 0.3s;
 }
 
 .review-card:hover {
@@ -258,47 +338,6 @@
   font-size: var(--text-xl);
   color: var(--gray-600);
   margin-bottom: var(--space-8);
-}
-
-/* Button Styles */
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: var(--space-3) var(--space-6);
-  border-radius: var(--radius-lg);
-  font-weight: var(--font-semibold);
-  text-decoration: none;
-  border: none;
-  cursor: pointer;
-  transition: all var(--transition-fast);
-  font-size: var(--text-base);
-}
-
-.btn-primary {
-  background: var(--primary-color);
-  color: var(--white);
-}
-
-.btn-primary:hover {
-  background: var(--primary-dark);
-  transform: translateY(-2px);
-}
-
-.btn-secondary {
-  background: transparent;
-  color: var(--white);
-  border: 2px solid var(--white);
-}
-
-.btn-secondary:hover {
-  background: var(--white);
-  color: var(--primary-color);
-}
-
-.btn-large {
-  padding: var(--space-4) var(--space-8);
-  font-size: var(--text-lg);
 }
 
 /* Large Screen Centering */

@@ -189,36 +189,6 @@
   color: var(--gray-600);
 }
 
-/* Button Styles */
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: var(--space-3) var(--space-6);
-  border-radius: var(--radius-lg);
-  font-weight: var(--font-semibold);
-  text-decoration: none;
-  border: none;
-  cursor: pointer;
-  transition: all var(--transition-fast);
-  font-size: var(--text-base);
-}
-
-.btn-primary {
-  background: var(--primary-color);
-  color: var(--white);
-}
-
-.btn-primary:hover {
-  background: var(--primary-dark);
-  transform: translateY(-2px);
-}
-
-.btn-large {
-  padding: var(--space-4) var(--space-8);
-  font-size: var(--text-lg);
-}
-
 /* Large Screen Centering */
 @media (min-width: 1400px) {
   .container {
