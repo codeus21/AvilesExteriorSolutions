@@ -1,7 +1,10 @@
 import React from 'react';
 import './Footer.css';
+import facebookLogo from '../assets/logos/facebookLogoBlack.png';
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+  
   return (
     <footer className="footer">
       <div className="footer-content">
@@ -15,17 +18,8 @@ const Footer = () => {
             Building dreams and constructing reality for our valued clients.
           </p>
           <div className="social-links">
-            <a href="#" className="social-link" aria-label="Facebook">
-              <span className="social-icon">📘</span>
-            </a>
-            <a href="#" className="social-link" aria-label="Twitter">
-              <span className="social-icon">🐦</span>
-            </a>
-            <a href="#" className="social-link" aria-label="LinkedIn">
-              <span className="social-icon">💼</span>
-            </a>
-            <a href="#" className="social-link" aria-label="Instagram">
-              <span className="social-icon">📷</span>
+            <a href="https://facebook.com" className="social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+              <img src={facebookLogo} alt="Facebook" className="social-icon" />
             </a>
           </div>
         </div>
@@ -82,12 +76,7 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="footer-bottom-content">
           <div className="footer-copyright">
-            <p>&copy; 2024 BuildCorp Construction. All rights reserved.</p>
-          </div>
-          <div className="footer-legal">
-            <a href="#" className="legal-link">Privacy Policy</a>
-            <a href="#" className="legal-link">Terms of Service</a>
-            <a href="#" className="legal-link">Cookie Policy</a>
+            <p>&copy; {currentYear} BuildCorp Construction. All rights reserved.</p>
           </div>
         </div>
       </div>

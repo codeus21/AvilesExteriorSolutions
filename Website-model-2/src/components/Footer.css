@@ -68,7 +68,9 @@
 }
 
 .social-icon {
-  font-size: var(--text-lg);
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
 }
 
 /* Footer Sections */
@@ -137,7 +139,7 @@
   margin: 0 auto;
   padding: var(--space-6) var(--space-6);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -240,7 +242,8 @@
   }
   
   .social-icon {
-    font-size: var(--text-base);
+    width: 20px;
+    height: 20px;
   }
   
   .footer-legal {

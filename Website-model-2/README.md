@@ -72,6 +72,25 @@ A modern, responsive React website template designed specifically for home servi
 
 4. Open your browser and navigate to `http://localhost:5173`
 
+### Running on Local Network
+
+To access the website from other devices on your local network:
+
+1. Start the development server with network access:
+   ```bash
+   npm run dev:network
+   ```
+
+2. The server will display both local and network URLs:
+   ```
+   Local:   http://localhost:5173/
+   Network: http://192.168.1.xxx:5173/
+   ```
+
+3. Use the Network URL to access the site from other devices (phones, tablets, other computers) on the same WiFi network.
+
+**Note**: Make sure your firewall allows connections on port 5173, and that all devices are connected to the same network.
+
 ### Building for Production
 
 ```bash
