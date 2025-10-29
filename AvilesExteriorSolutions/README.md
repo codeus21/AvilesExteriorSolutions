@@ -1,55 +1,84 @@
-# Home Service Business Template Website
+# Aviles Exterior Services Website
 
-A modern, responsive React website template designed specifically for home service businesses. Built with React Router for seamless navigation and featuring a professional design system with CSS variables for easy customization.
+A modern, responsive website for Aviles Exterior Services - a professional exterior services company serving Douglasville, GA and surrounding areas. Built with React and featuring a clean, professional design optimized for showcasing exterior service offerings.
 
-## 🏠 Features
+## 🏠 About the Business
 
-- **Responsive Design**: Mobile-first approach with CSS Grid and Flexbox
+Aviles Exterior Services provides comprehensive exterior solutions including lawn care, landscaping, trimming, house washing, and yard maintenance. With over 5 years of experience, we transform outdoor spaces and maintain beautiful landscapes for our valued clients.
+
+**Location**: Douglasville, GA  
+**Phone**: (470) 526-3353  
+**Email**: contact@avileswebsolutions.com  
+**Website**: https://avileswebsolutions.com
+
+## ✨ Features
+
+- **Responsive Design**: Mobile-first approach with breakpoints at 1020px, 900px, 768px, and 480px
 - **React Router**: Multi-page navigation with smooth transitions
-- **Modern UI**: Clean, professional design with hover effects and animations
+- **Modern UI**: Clean, professional design with hover effects and scroll animations
 - **CSS Variables**: Centralized theming system for easy customization
 - **Accessibility**: Proper focus states, semantic HTML, and screen reader support
-- **Mobile Navigation**: Hamburger menu for mobile devices
-- **Form Handling**: Contact form with validation and state management
+- **Mobile Navigation**: Hamburger menu that appears at 900px and below
+- **Contact Integration**: Contact form with validation and state management
+- **Call-to-Action**: Floating call button component for easy contact access
+- **Scroll Animations**: Smooth fade-in animations for enhanced user experience
+- **Dynamic Statistics**: Count-up animation component for showcasing achievements
 
 ## 📄 Pages Included
 
 ### Home Page
-- Hero section with call-to-action buttons
-- Services showcase (Residential, Commercial, Renovation, Design)
-- Company statistics and achievements
-- Call-to-action section
+- Hero section with company name and tagline
+- Services showcase (Lawn Care, Landscaping, Trimming, House Washing, Yard Maintenance)
+- Company statistics with count-up animations
+- Call-to-action sections
 
 ### About Us Page
 - Company story and mission
-- Team member profiles
-- Certifications and licenses
-- Values and mission statements
+- Team information
+- Experience and credentials
+- Service areas
+
+### Services Page
+- Overview of all services
+- Individual service pages:
+  - Lawn Care (`/services/lawn-care`)
+  - Landscaping (`/services/landscaping`)
+  - Bush & Hedge Trimming (`/services/trimming`)
+  - House Washing (`/services/house-washing`)
+  - Yard Maintenance (`/services/yard-maintenance`)
+- Service process information
 
 ### Projects Page
+- Project showcase gallery
 - Project filtering by category
-- Project showcase with details
-- Project statistics
-- Interactive project cards
+- Project details and descriptions
+- Visual portfolio of completed work
 
 ### Contact Page
 - Contact form with validation
 - Company contact information
 - Business hours and location
-- FAQ section
+- Service area information
 
 ## 🎨 Design System
 
 ### Color Palette
-- **Primary**: Deep blue (`#1a365d`) - Professional, trustworthy
-- **Secondary**: Orange (`#ed8936`) - Energy, construction industry standard
+- **Primary Color**: Deep blue/green (`#1a365d` or `#2d6a4f`) - Professional, trustworthy
+- **Secondary Color**: Orange/Accent (`#ed8936`) - Energy, call-to-action
 - **Neutrals**: Gray scale for text and backgrounds
-- **Accents**: Blue, green, red for status indicators
+- Colors defined in `src/styles/variables.css`
 
 ### Typography
-- **Primary Font**: Inter (system fonts fallback)
-- **Heading Font**: Poppins (system fonts fallback)
+- **Primary Font**: System fonts (Inter fallback)
+- **Heading Font**: System fonts (Poppins fallback)
 - **Responsive**: Scales appropriately across devices
+
+### Responsive Breakpoints
+- **Large Desktop**: > 1400px
+- **Desktop**: > 1020px
+- **Tablet**: 768px - 1020px
+- **Mobile**: < 900px (hamburger menu appears)
+- **Small Mobile**: < 480px
 
 ## 🚀 Getting Started
 
@@ -59,7 +88,8 @@ A modern, responsive React website template designed specifically for home servi
 
 ### Installation
 
-1. Clone or download this template
+1. Clone the repository or navigate to the project directory
+
 2. Install dependencies:
    ```bash
    npm install
@@ -99,10 +129,44 @@ npm run build
 
 The built files will be in the `dist` directory, ready for deployment.
 
+### Preview Production Build
+
+```bash
+npm run preview
+```
+
+## 📁 Project Structure
+
+```
+src/
+├── components/          # Reusable components
+│   ├── CallButton.jsx   # Floating call button
+│   ├── CountUpStat.jsx  # Animated statistics component
+│   ├── Footer.jsx       # Site footer
+│   ├── Navigation.jsx   # Main navigation bar
+│   ├── ScrollAnimation.jsx  # Scroll-triggered animations
+│   └── ScrollToTop.jsx  # Scroll to top button
+├── pages/               # Page components
+│   ├── Home.jsx         # Home page
+│   ├── About.jsx        # About page
+│   ├── Services.jsx     # Services overview
+│   ├── LawnCare.jsx     # Individual service pages
+│   ├── Landscaping.jsx
+│   ├── Trimming.jsx
+│   ├── HouseWashing.jsx
+│   ├── YardMaintenance.jsx
+│   ├── Projects.jsx     # Projects showcase
+│   └── Contact.jsx      # Contact page
+├── styles/              # Global styles
+│   └── variables.css    # CSS variables and theme
+└── assets/              # Static assets
+    └── logos/           # Logo images
+```
+
 ## 🛠️ Customization
 
 ### Updating Content
-- **Company Information**: Edit the content in each page component (`src/pages/`)
+- **Company Information**: Edit content in page components (`src/pages/`)
 - **Navigation**: Modify `src/components/Navigation.jsx`
 - **Colors**: Update CSS variables in `src/styles/variables.css`
 - **Styling**: Each page has its own CSS file for easy maintenance
@@ -113,41 +177,34 @@ The built files will be in the `dist` directory, ready for deployment.
 3. Update the router in `src/App.jsx`
 4. Add navigation link in `src/components/Navigation.jsx`
 
-### Branding
-- Replace placeholder content with your business information
-- Update colors in `src/styles/variables.css`
-- Add your logo to the navigation component
-- Customize the hero sections with your business messaging
-
-## 📱 Responsive Breakpoints
-
-- **Mobile**: < 480px
-- **Tablet**: 480px - 768px
-- **Desktop**: > 768px
-
-## 🎯 Perfect For
-
-- Construction companies
-- Home renovation services
-- Plumbing services
-- Electrical contractors
-- HVAC companies
-- Landscaping businesses
-- General contractors
-- Any home service business
+### Navigation Responsiveness
+- **1020px and below**: "Get Quote" button hides, navigation links remain visible
+- **900px and below**: Navigation links hide, hamburger menu appears
+- **Mobile**: Full mobile menu with services dropdown
 
 ## 📦 Technologies Used
 
 - **React 19** - Modern React with hooks
-- **React Router DOM** - Client-side routing
-- **Vite** - Fast build tool and dev server
+- **React Router DOM 7** - Client-side routing
+- **React CountUp** - Animated number counting
+- **Vite 7** - Fast build tool and dev server
 - **CSS3** - Modern CSS with Grid, Flexbox, and custom properties
 - **ESLint** - Code linting and formatting
 
+## 📱 Mobile Features
+
+- Responsive navigation with hamburger menu
+- Mobile-optimized contact form
+- Touch-friendly call button
+- Optimized images and layouts
+- Mobile-first CSS approach
+
 ## 📄 License
 
-This template is free to use for personal and commercial projects. Feel free to modify and customize it for your business needs.
+This website is proprietary and designed for Aviles Exterior Services. All rights reserved.
 
-## 🤝 Support
+## 🤝 Support & Development
 
-For questions or support with this template, please refer to the React and Vite documentation or create an issue in the project repository.
+**Designed by**: [Aviles Web Solutions](https://avileswebsolutions.com)
+
+For technical support or questions about this website, please contact the development team.
