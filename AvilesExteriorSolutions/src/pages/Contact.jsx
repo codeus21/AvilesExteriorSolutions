@@ -41,7 +41,7 @@ const Contact = () => {
       emailjs.init(publicKey);
 
       // Get recipient email from environment or use default
-      const recipientEmail = import.meta.env.VITE_EMAILJS_RECIPIENT || 'contact@avileswebsolutions.com';
+      const recipientEmail = import.meta.env.VITE_EMAILJS_RECIPIENT || 'avilesexteriorservices@gmail.com';
 
       // Send email
       const result = await emailjs.send(
@@ -228,7 +228,7 @@ const Contact = () => {
                   <div className="info-content">
                     <h3>Email</h3>
                     <p>
-                      <a href="mailto:contact@avileswebsolutions.com" style={{color: 'inherit', textDecoration: 'none'}}>contact@avileswebsolutions.com</a>
+                      <a href="mailto:avilesexteriorservices@gmail.com" style={{color: 'inherit', textDecoration: 'none'}}>avilesexteriorservices@gmail.com</a>
                     </p>
                   </div>
                 </div>

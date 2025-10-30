@@ -61,7 +61,7 @@ const Footer = () => {
             </div>
             <div className="contact-item">
               <span className="contact-icon">✉️</span>
-              <a href="mailto:contact@avileswebsolutions.com" className="contact-text" style={{textDecoration: 'none', color: 'inherit'}}>contact@avileswebsolutions.com</a>
+              <a href="mailto:avilesexteriorservices@gmail.com" className="contact-text" style={{textDecoration: 'none', color: 'inherit'}}>avilesexteriorservices@gmail.com</a>
             </div>
             <div className="contact-item">
               <span className="contact-icon">🕒</span>
