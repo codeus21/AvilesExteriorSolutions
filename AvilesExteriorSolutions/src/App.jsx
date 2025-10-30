@@ -17,6 +17,8 @@ import Landscaping from './pages/Landscaping';
 import Trimming from './pages/Trimming';
 import HouseWashing from './pages/HouseWashing';
 import YardMaintenance from './pages/YardMaintenance';
+import TreeTrimming from './pages/TreeTrimming';
+import LandClearing from './pages/LandClearing';
 import './styles/variables.css';
 import './App.css';
 
@@ -37,6 +39,8 @@ function App() {
             <Route path="/services/lawn-care" element={<LawnCare />} />
             <Route path="/services/landscaping" element={<Landscaping />} />
             <Route path="/services/trimming" element={<Trimming />} />
+            <Route path="/services/tree-trimming" element={<TreeTrimming />} />
+            <Route path="/services/land-clearing" element={<LandClearing />} />
             <Route path="/services/house-washing" element={<HouseWashing />} />
             <Route path="/services/yard-maintenance" element={<YardMaintenance />} />
             <Route path="/projects" element={<Projects />} />

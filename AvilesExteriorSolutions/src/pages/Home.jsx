@@ -139,7 +139,7 @@ const Home = () => {
                   <div className="project-icon-large">🌱</div>
                 </div>
                 <div className="project-showcase-content">
-                  <h3>Suburban Lawn Transformation</h3>
+                  <h3>Lawn Mowing</h3>
                   <p>Complete lawn care makeover for a pristine suburban home</p>
                 </div>
               </div>
@@ -150,7 +150,7 @@ const Home = () => {
                   <div className="project-icon-large">✂️</div>
                 </div>
                 <div className="project-showcase-content">
-                  <h3>Hedge Sculpting Project</h3>
+                  <h3>Bush and Hedge Maintenance</h3>
                   <p>Professional bush and hedge trimming creating beautiful geometric shapes</p>
                 </div>
               </div>
@@ -161,7 +161,7 @@ const Home = () => {
                   <div className="project-icon-large">🏰</div>
                 </div>
                 <div className="project-showcase-content">
-                  <h3>Luxury Home Exterior Cleaning</h3>
+                  <h3>House Washing</h3>
                   <p>Complete house washing service including pressure washing and maintenance</p>
                 </div>
               </div>
@@ -172,7 +172,7 @@ const Home = () => {
                   <div className="project-icon-large">🏢</div>
                 </div>
                 <div className="project-showcase-content">
-                  <h3>Commercial Property Maintenance</h3>
+                  <h3>Leaf Cleanup</h3>
                   <p>Regular lawn maintenance and landscaping for office complexes</p>
                 </div>
               </div>

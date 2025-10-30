@@ -42,10 +42,22 @@ const Services = () => {
               <Link to="/services/trimming" className="btn btn-outline">Learn More</Link>
             </div>
             <div className="service-card">
+              <div className="service-icon">🌲</div>
+              <h3>Tree Trimming</h3>
+              <p>Safe, professional tree pruning to remove deadwood, shape canopies, and improve safety and health.</p>
+              <Link to="/services/tree-trimming" className="btn btn-outline">Learn More</Link>
+            </div>
+            <div className="service-card">
               <div className="service-icon">🏠</div>
               <h3>House Washing</h3>
               <p>Professional exterior cleaning services to keep your home's siding, windows, gutters, and outdoor surfaces spotless and well-maintained.</p>
               <Link to="/services/house-washing" className="btn btn-outline">Learn More</Link>
+            </div>
+            <div className="service-card">
+              <div className="service-icon">🚜</div>
+              <h3>Land Clearing</h3>
+              <p>Brush and overgrowth removal, small tree removal, and debris haul-off to reclaim your property.</p>
+              <Link to="/services/land-clearing" className="btn btn-outline">Learn More</Link>
             </div>
             <div className="service-card">
               <div className="service-icon">🔧</div>

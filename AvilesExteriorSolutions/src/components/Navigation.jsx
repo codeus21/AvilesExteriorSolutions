@@ -126,11 +126,25 @@ const Navigation = () => {
                 Bush & Hedge Trimming
               </Link>
               <Link 
+                to="/services/tree-trimming" 
+                className="dropdown-link"
+                onClick={closeMenu}
+              >
+                Tree Trimming
+              </Link>
+              <Link 
                 to="/services/house-washing" 
                 className="dropdown-link"
                 onClick={closeMenu}
               >
                 House Washing
+              </Link>
+              <Link 
+                to="/services/land-clearing" 
+                className="dropdown-link"
+                onClick={closeMenu}
+              >
+                Land Clearing
               </Link>
               <Link 
                 to="/services/yard-maintenance" 
@@ -234,11 +248,25 @@ const Navigation = () => {
                 Bush & Hedge Trimming
               </Link>
               <Link 
+                to="/services/tree-trimming" 
+                className="mobile-dropdown-link"
+                onClick={closeMenu}
+              >
+                Tree Trimming
+              </Link>
+              <Link 
                 to="/services/house-washing" 
                 className="mobile-dropdown-link"
                 onClick={closeMenu}
               >
                 House Washing
+              </Link>
+              <Link 
+                to="/services/land-clearing" 
+                className="mobile-dropdown-link"
+                onClick={closeMenu}
+              >
+                Land Clearing
               </Link>
               <Link 
                 to="/services/yard-maintenance" 
