@@ -44,7 +44,9 @@ Aviles Exterior Services provides comprehensive exterior solutions including law
   - Lawn Care (`/services/lawn-care`)
   - Landscaping (`/services/landscaping`)
   - Bush & Hedge Trimming (`/services/trimming`)
+  - Tree Trimming (`/services/tree-trimming`)
   - House Washing (`/services/house-washing`)
+  - Land Clearing (`/services/land-clearing`)
   - Yard Maintenance (`/services/yard-maintenance`)
 - Service process information
 
@@ -55,7 +57,7 @@ Aviles Exterior Services provides comprehensive exterior solutions including law
 - Visual portfolio of completed work
 
 ### Contact Page
-- Contact form with validation
+- Contact form with EmailJS integration
 - Company contact information
 - Business hours and location
 - Service area information
@@ -163,6 +165,50 @@ src/
     └── logos/           # Logo images
 ```
 
+## 🛠️ Setup & Configuration
+
+### EmailJS Configuration
+
+The contact form uses EmailJS to send emails. Follow these steps to configure it:
+
+1. **Sign up for EmailJS** at https://www.emailjs.com/
+
+2. **Create an Email Service**
+   - Go to Email Services in your dashboard
+   - Add a new service (Gmail, Outlook, etc.)
+   - Follow the setup instructions
+
+3. **Create an Email Template**
+   - Go to Email Templates in your dashboard
+   - Create a new template
+   - Use these template variables:
+     - `{{from_name}}` - Sender's name
+     - `{{from_email}}` - Sender's email
+     - `{{phone}}` - Phone number
+     - `{{service_type}}` - Selected service type
+     - `{{message}}` - Message content
+     - `{{to_email}}` - Recipient email
+
+4. **Get Your Credentials**
+   - Public Key: Found in Account > API Keys
+   - Service ID: Found in Email Services
+   - Template ID: Found in Email Templates
+
+5. **Create Environment File**
+   - Create a `.env` file in the root directory
+   - Add your credentials:
+     ```
+     VITE_EMAILJS_PUBLIC_KEY=your_public_key_here
+     VITE_EMAILJS_SERVICE_ID=your_service_id_here
+     VITE_EMAILJS_TEMPLATE_ID=your_template_id_here
+     ```
+
+6. **Restart Development Server**
+   - Stop the dev server (Ctrl+C)
+   - Run `npm run dev` again
+
+**Note**: The `.env` file is already in `.gitignore` to keep your credentials secure.
+
 ## 🛠️ Customization
 
 ### Updating Content
@@ -187,6 +233,7 @@ src/
 - **React 19** - Modern React with hooks
 - **React Router DOM 7** - Client-side routing
 - **React CountUp** - Animated number counting
+- **EmailJS** - Contact form email service
 - **Vite 7** - Fast build tool and dev server
 - **CSS3** - Modern CSS with Grid, Flexbox, and custom properties
 - **ESLint** - Code linting and formatting

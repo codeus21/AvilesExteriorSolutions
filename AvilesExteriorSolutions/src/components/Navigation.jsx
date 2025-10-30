@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Navigation.css';
+import logo from '../assets/logos/aviles-exterior-services-high-resolution-logo-transparent.png';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -69,7 +70,7 @@ const Navigation = () => {
       <div className="nav-container">
         {/* Logo */}
         <Link to="/" className="nav-logo" onClick={closeMenu}>
-          <span className="logo-text">Aviles Exterior Services</span>
+          <img src={logo} alt="Aviles Exterior Services" className="nav-logo-img" />
         </Link>
 
         {/* Desktop Navigation */}

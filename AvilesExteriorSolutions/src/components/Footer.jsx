@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.css';
-import facebookLogo from '../assets/logos/facebookLogoBlack.png';
+import facebookLogo from '../assets/logos/facebookLogoblack.png';
+import brandLogo from '../assets/logos/aviles-exterior-services-logo-black-transparent (1).png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,7 +11,7 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-section">
           <div className="footer-logo">
-            <span className="logo-text">Aviles Exterior Services</span>
+            <img src={brandLogo} alt="Aviles Exterior Services" className="footer-logo-img" />
           </div>
           <p className="footer-description">
             Professional exterior services with over 5 years of experience. 

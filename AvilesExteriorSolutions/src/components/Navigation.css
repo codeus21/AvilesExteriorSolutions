@@ -43,6 +43,13 @@
   text-overflow: ellipsis;
 }
 
+/* Image logo */
+.nav-logo-img {
+  height: 36px;
+  width: auto;
+  display: block;
+}
+
 /* Desktop Navigation */
 .nav-menu {
   display: flex;
@@ -316,6 +323,10 @@
     font-size: var(--text-lg);
     line-height: 1.2;
   }
+
+  .nav-logo-img {
+    height: 32px;
+  }
   
   .mobile-menu-btn {
     flex-shrink: 0;
@@ -391,6 +402,10 @@
     text-overflow: clip;
     line-height: 1.2;
     max-width: none;
+  }
+
+  .nav-logo-img {
+    height: 30px;
   }
   
   .logo-icon {

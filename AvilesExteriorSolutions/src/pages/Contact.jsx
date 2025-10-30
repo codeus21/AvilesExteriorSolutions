@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import './Contact.css';
 
 const Contact = () => {
@@ -10,6 +11,9 @@ const Contact = () => {
     message: ''
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null); // 'success' or 'error'
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -17,18 +21,71 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! We will get back to you soon.');
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      projectType: '',
-      message: ''
-    });
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
+    try {
+      // EmailJS configuration from environment variables
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+      // Check if EmailJS is configured
+      if (!serviceId || !templateId || !publicKey) {
+        throw new Error('EmailJS is not properly configured. Please check your environment variables.');
+      }
+
+      // Initialize EmailJS
+      emailjs.init(publicKey);
+
+      // Get recipient email from environment or use default
+      const recipientEmail = import.meta.env.VITE_EMAILJS_RECIPIENT || 'contact@avileswebsolutions.com';
+
+      // Send email
+      const result = await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          phone: formData.phone || 'Not provided',
+          service_type: formData.projectType || 'Not specified',
+          message: formData.message,
+          to_email: recipientEmail,
+        }
+      );
+
+      console.log('Email sent successfully:', result);
+      
+      setSubmitStatus('success');
+      
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        projectType: '',
+        message: ''
+      });
+
+      // Clear success message after 5 seconds
+      setTimeout(() => {
+        setSubmitStatus(null);
+      }, 5000);
+
+    } catch (error) {
+      console.error('Failed to send email:', error);
+      setSubmitStatus('error');
+      
+      // Clear error message after 5 seconds
+      setTimeout(() => {
+        setSubmitStatus(null);
+      }, 5000);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -98,7 +155,9 @@ const Contact = () => {
                     <option value="lawn-care">Lawn Care</option>
                     <option value="landscaping">Landscaping</option>
                     <option value="trimming">Bush & Hedge Trimming</option>
+                    <option value="tree-trimming">Tree Trimming</option>
                     <option value="house-washing">House Washing</option>
+                    <option value="land-clearing">Land Clearing</option>
                     <option value="yard-maintenance">Yard Maintenance</option>
                     <option value="other">Other</option>
                   </select>
@@ -117,8 +176,23 @@ const Contact = () => {
                   ></textarea>
                 </div>
                 
-                <button type="submit" className="btn btn-primary btn-large">
-                  Send Message
+                {submitStatus === 'success' && (
+                  <div className="form-message success">
+                    ✓ Thank you for your message! We'll get back to you soon.
+                  </div>
+                )}
+                {submitStatus === 'error' && (
+                  <div className="form-message error">
+                    ✗ Failed to send message. Please try again or call us at (470) 526-3353.
+                  </div>
+                )}
+                
+                <button 
+                  type="submit" 
+                  className="btn btn-primary btn-large"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
                 </button>
               </form>
             </div>

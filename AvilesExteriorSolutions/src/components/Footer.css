@@ -17,13 +17,23 @@
 /* Footer Logo Section */
 .footer-section:first-child {
   max-width: 400px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .footer-logo {
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 100%;
   gap: var(--space-2);
   margin-bottom: var(--space-4);
+}
+
+.footer-logo-img {
+  height: 100px;
+  width: auto;
+  display: block;
 }
 
 .footer-logo .logo-icon {
@@ -48,6 +58,7 @@
 .social-links {
   display: flex;
   gap: var(--space-3);
+  justify-content: center;
 }
 
 .social-link {
