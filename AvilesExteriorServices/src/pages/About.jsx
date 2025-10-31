@@ -28,7 +28,7 @@ const About = () => {
         title="About Aviles Exterior Services - Professional Lawn Care & Landscaping in Douglasville GA"
         description="Learn about Aviles Exterior Services - professional lawn care & landscaping company serving Douglasville, Villa Rica, Hiram & Lithia Springs GA. 5+ years experience transforming outdoor spaces."
         keywords="about Aviles Exterior Services, lawn care company Douglasville, landscaping contractor Douglas County GA, exterior services Villa Rica"
-        canonical="https://avilesexterior.com/about"
+        canonical="https://avilesexteriorservices.com/about"
         structuredData={structuredData}
       />
       <div className="about">

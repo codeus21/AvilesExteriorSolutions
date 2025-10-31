@@ -37,7 +37,7 @@ const Services = () => {
         title="Exterior Services in Douglasville GA | Lawn Care, Landscaping, House Washing | Villa Rica, Hiram, Lithia Springs"
         description="Professional exterior services in Douglasville, Villa Rica, Hiram & Lithia Springs GA. Lawn care, landscaping, house washing, tree trimming & yard maintenance. Free quotes! Call (470) 526-3353."
         keywords="exterior services Douglasville, lawn care Villa Rica, landscaping Hiram, house washing Lithia Springs, yard maintenance Douglas County GA"
-        canonical="https://avilesexterior.com/services"
+        canonical="https://avilesexteriorservices.com/services"
         structuredData={structuredData}
       />
       <div className="services-page">

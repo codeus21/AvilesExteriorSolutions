@@ -29,7 +29,7 @@ const LawnCare = () => {
         title="Lawn Care Services Douglasville GA | Villa Rica, Hiram, Lithia Springs | Aviles Exterior Services"
         description="Professional lawn care services in Douglasville, Villa Rica, Hiram & Lithia Springs GA. Expert lawn mowing, fertilizing, weed control & seasonal maintenance. Free quotes! Call (470) 526-3353."
         keywords="lawn care Douglasville GA, lawn mowing Villa Rica, lawn maintenance Hiram, lawn service Lithia Springs, lawn care Douglas County GA, professional lawn care Douglasville"
-        canonical="https://avilesexterior.com/services/lawn-care"
+        canonical="https://avilesexteriorservices.com/services/lawn-care"
         structuredData={structuredData}
       />
       <div className="service-page">

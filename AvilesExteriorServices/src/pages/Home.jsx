@@ -23,7 +23,7 @@ const Home = () => {
       "latitude": 33.7515,
       "longitude": -84.7477
     },
-    "url": "https://avilesexterior.com",
+    "url": "https://avilesexteriorservices.com",
     "telephone": "+14705263353",
     "areaServed": ["Douglasville", "Villa Rica", "Hiram", "Lithia Springs"],
     "serviceType": ["Lawn Care", "Landscaping", "House Washing", "Yard Maintenance", "Tree Trimming"]
@@ -35,7 +35,7 @@ const Home = () => {
         title="Aviles Exterior Services - Top Rated Lawn Care & Landscaping in Douglasville, Villa Rica, Hiram, Lithia Springs GA"
         description="#1 Lawn Care & Landscaping Company in Douglasville GA. Serving Villa Rica, Hiram, Lithia Springs. Professional lawn maintenance, landscaping, house washing, tree trimming & yard maintenance. Call (470) 526-3353 for free quote!"
         keywords="lawn care Douglasville GA, landscaping Douglasville, lawn care Villa Rica, landscaping Hiram GA, lawn care Lithia Springs, bush trimming Douglasville, house washing Douglasville GA, yard maintenance Villa Rica"
-        canonical="https://avilesexterior.com/"
+        canonical="https://avilesexteriorservices.com/"
         structuredData={structuredData}
       />
       <div className="home">
