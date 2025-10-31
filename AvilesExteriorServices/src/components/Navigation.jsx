@@ -69,8 +69,8 @@ const Navigation = () => {
     <nav className="navigation">
       <div className="nav-container">
         {/* Logo */}
-        <Link to="/" className="nav-logo" onClick={closeMenu}>
-          <img src={logo} alt="Aviles Exterior Services" className="nav-logo-img" />
+        <Link to="/" className="nav-logo" onClick={closeMenu} aria-label="Aviles Exterior Services - Home">
+          <img src={logo} alt="Aviles Exterior Services - Professional Lawn Care and Landscaping in Douglasville, Villa Rica, Hiram, and Lithia Springs GA" className="nav-logo-img" />
         </Link>
 
         {/* Desktop Navigation */}

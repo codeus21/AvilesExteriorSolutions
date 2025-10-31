@@ -11,15 +11,15 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-section">
           <div className="footer-logo">
-            <img src={brandLogo} alt="Aviles Exterior Services" className="footer-logo-img" />
+            <img src={brandLogo} alt="Aviles Exterior Services - Professional Lawn Care and Landscaping in Douglasville, Villa Rica, Hiram, and Lithia Springs GA" className="footer-logo-img" />
           </div>
           <p className="footer-description">
             Professional exterior services with over 5 years of experience. 
             Transforming outdoor spaces and maintaining beautiful landscapes for our valued clients.
           </p>
           <div className="social-links">
-            <a href="https://facebook.com" className="social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
-              <img src={facebookLogo} alt="Facebook" className="social-icon" />
+            <a href="https://facebook.com" className="social-link" aria-label="Aviles Exterior Services Facebook Page" target="_blank" rel="noopener noreferrer">
+              <img src={facebookLogo} alt="Facebook - Aviles Exterior Services Douglasville GA" className="social-icon" />
             </a>
           </div>
         </div>
@@ -51,8 +51,8 @@ const Footer = () => {
             <div className="contact-item">
               <span className="contact-icon">📍</span>
               <span className="contact-text">
-                Serving Douglasville, GA<br />
-                and surrounding areas
+                Serving Douglasville, Villa Rica,<br />
+                Hiram, Lithia Springs & Douglas County, GA
               </span>
             </div>
             <div className="contact-item">

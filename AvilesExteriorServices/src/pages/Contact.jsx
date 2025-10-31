@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
+import SEO from '../components/SEO';
 import './Contact.css';
 
 const Contact = () => {
@@ -88,17 +89,47 @@ const Contact = () => {
     }
   };
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Aviles Exterior Services",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Douglasville",
+      "addressRegion": "GA",
+      "postalCode": "30135"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 33.7515,
+      "longitude": -84.7477
+    },
+    "url": "https://avilesexterior.com",
+    "telephone": "+14705263353",
+    "email": "avilesexteriorservices@gmail.com",
+    "areaServed": ["Douglasville", "Villa Rica", "Hiram", "Lithia Springs"]
+  };
+
   return (
-    <div className="contact">
-      {/* Hero Section */}
-      <section className="contact-hero">
-        <div className="container">
-          <h1 className="page-title">Contact Us</h1>
-          <p className="page-subtitle">
-            Get in touch for your next exterior services project. We're here to help transform your outdoor space.
-          </p>
-        </div>
-      </section>
+    <>
+      <SEO 
+        title="Contact Aviles Exterior Services - Douglasville, Villa Rica, Hiram, Lithia Springs GA | (470) 526-3353"
+        description="Contact Aviles Exterior Services for professional lawn care & landscaping in Douglasville, Villa Rica, Hiram & Lithia Springs GA. Free quotes! Call (470) 526-3353 or email us today."
+        keywords="contact Aviles Exterior Services, lawn care Douglasville, landscaping Villa Rica, exterior services Hiram, yard maintenance Lithia Springs"
+        canonical="https://avilesexterior.com/contact"
+        structuredData={structuredData}
+      />
+      <div className="contact">
+        {/* Hero Section */}
+        <section className="contact-hero">
+          <div className="container">
+            <h1 className="page-title">Contact Aviles Exterior Services - Douglasville, GA</h1>
+            <p className="page-subtitle">
+              Get in touch for your next exterior services project in Douglasville, Villa Rica, Hiram, or Lithia Springs. 
+              We're here to help transform your outdoor space throughout Douglas County, Georgia.
+            </p>
+          </div>
+        </section>
 
       {/* Contact Content */}
       <section className="contact-content">
@@ -205,10 +236,10 @@ const Contact = () => {
                 <div className="info-item">
                   <div className="info-icon">📍</div>
                   <div className="info-content">
-                    <h3>Service Area</h3>
+                    <h3>Service Areas</h3>
                     <p>
-                      Serving Douglasville, GA<br />
-                      and surrounding areas
+                      Serving Douglasville, Villa Rica, Hiram,<br />
+                      Lithia Springs & Douglas County, GA
                     </p>
                   </div>
                 </div>
@@ -248,11 +279,11 @@ const Contact = () => {
 
               {/* Service Area */}
               <div className="map-section">
-                <h3>Service Area</h3>
+                <h3>Service Areas</h3>
                 <div className="map-placeholder">
                   <div className="map-icon">🗺️</div>
-                  <p>Douglasville, GA</p>
-                  <small>We serve Douglasville and surrounding areas</small>
+                  <p>Douglas County, Georgia</p>
+                  <small>We proudly serve Douglasville, Villa Rica, Hiram, Lithia Springs and surrounding areas in Douglas County GA</small>
                 </div>
               </div>
             </div>
@@ -296,15 +327,16 @@ const Contact = () => {
             <div className="faq-item">
               <h3>What areas do you serve?</h3>
               <p>
-                We primarily serve Douglasville, GA and the surrounding areas. Contact us 
-                to confirm if we service your specific location, and we'll be happy to 
-                discuss your exterior services needs.
+                We primarily serve Douglasville, Villa Rica, Hiram, and Lithia Springs, Georgia, along with 
+                surrounding areas in Douglas County. Contact us to confirm if we service your specific location, 
+                and we'll be happy to discuss your exterior services needs.
               </p>
             </div>
           </div>
         </div>
       </section>
     </div>
+    </>
   );
 };
 

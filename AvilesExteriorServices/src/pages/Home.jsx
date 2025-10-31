@@ -2,29 +2,61 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import ScrollAnimation from '../components/ScrollAnimation';
 import CountUpStat from '../components/CountUpStat';
+import SEO from '../components/SEO';
 import './Home.css';
 
 const Home = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Aviles Exterior Services",
+    "description": "Professional lawn care, landscaping, house washing, and yard maintenance services in Douglasville, Villa Rica, Hiram, and Lithia Springs, Georgia.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Douglasville",
+      "addressRegion": "GA",
+      "postalCode": "30135",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 33.7515,
+      "longitude": -84.7477
+    },
+    "url": "https://avilesexterior.com",
+    "telephone": "+14705263353",
+    "areaServed": ["Douglasville", "Villa Rica", "Hiram", "Lithia Springs"],
+    "serviceType": ["Lawn Care", "Landscaping", "House Washing", "Yard Maintenance", "Tree Trimming"]
+  };
+
   return (
-    <div className="home">
-      {/* Hero Section */}
-      <section className="hero">
-        <div className="hero-content">
-          <div className="hero-text">
-            <ScrollAnimation className="fade-in-left">
-              <h2 className="company-name">Aviles Exterior Services</h2>
-            </ScrollAnimation>
-            <ScrollAnimation delay={100}>
-              <h1 className="hero-title">
-                Transforming Outdoor Spaces, <span className="highlight">One Yard at a Time</span>
-              </h1>
-            </ScrollAnimation>
-            <ScrollAnimation delay={200}>
-              <p className="hero-subtitle">
-                Professional exterior services in Douglasville, GA. <br/> 
-                From lawn care to house washing, we deliver excellence in every outdoor project.
-              </p>
-            </ScrollAnimation>
+    <>
+      <SEO 
+        title="Aviles Exterior Services - Top Rated Lawn Care & Landscaping in Douglasville, Villa Rica, Hiram, Lithia Springs GA"
+        description="#1 Lawn Care & Landscaping Company in Douglasville GA. Serving Villa Rica, Hiram, Lithia Springs. Professional lawn maintenance, landscaping, house washing, tree trimming & yard maintenance. Call (470) 526-3353 for free quote!"
+        keywords="lawn care Douglasville GA, landscaping Douglasville, lawn care Villa Rica, landscaping Hiram GA, lawn care Lithia Springs, bush trimming Douglasville, house washing Douglasville GA, yard maintenance Villa Rica"
+        canonical="https://avilesexterior.com/"
+        structuredData={structuredData}
+      />
+      <div className="home">
+        {/* Hero Section */}
+        <section className="hero">
+          <div className="hero-content">
+            <div className="hero-text">
+              <ScrollAnimation className="fade-in-left">
+                <h2 className="company-name">Aviles Exterior Services</h2>
+              </ScrollAnimation>
+              <ScrollAnimation delay={100}>
+                <h1 className="hero-title">
+                  Transforming Outdoor Spaces in <span className="highlight">Douglasville, Villa Rica, Hiram & Lithia Springs GA</span>
+                </h1>
+              </ScrollAnimation>
+              <ScrollAnimation delay={200}>
+                <p className="hero-subtitle">
+                  Professional exterior services in Douglasville, Villa Rica, Hiram, and Lithia Springs, Georgia. <br/> 
+                  From lawn care to house washing, we deliver excellence in every outdoor project.
+                </p>
+              </ScrollAnimation>
             <ScrollAnimation delay={300}>
               <div className="hero-buttons">
                 <Link to="/projects" className="btn btn-primary">View Our Projects</Link>
@@ -53,36 +85,36 @@ const Home = () => {
             <ScrollAnimation delay={100}>
               <div className="service-card">
                 <div className="service-icon">🌱</div>
-                <h3>Lawn Care</h3>
-                <p>Professional lawn maintenance, mowing, fertilizing, and seasonal care to keep your grass healthy and beautiful.</p>
+                <h3>Lawn Care in Douglasville GA</h3>
+                <p>Professional lawn maintenance, mowing, fertilizing, and seasonal care to keep your grass healthy and beautiful. Serving Douglasville, Villa Rica, Hiram, and Lithia Springs.</p>
               </div>
             </ScrollAnimation>
             <ScrollAnimation delay={200}>
               <div className="service-card">
                 <div className="service-icon">🌳</div>
-                <h3>Landscaping</h3>
-                <p>Complete landscape design and installation, including plants, trees, flower beds, and outdoor features.</p>
+                <h3>Landscaping Services</h3>
+                <p>Complete landscape design and installation, including plants, trees, flower beds, and outdoor features. Expert landscaping throughout Douglas County GA.</p>
               </div>
             </ScrollAnimation>
             <ScrollAnimation delay={300}>
               <div className="service-card">
                 <div className="service-icon">✂️</div>
                 <h3>Bush & Hedge Trimming</h3>
-                <p>Expert pruning and trimming services to maintain the shape and health of your shrubs and hedges.</p>
+                <p>Expert pruning and trimming services to maintain the shape and health of your shrubs and hedges. Professional trimming in Douglasville and surrounding areas.</p>
               </div>
             </ScrollAnimation>
             <ScrollAnimation delay={400}>
               <div className="service-card">
                 <div className="service-icon">🏠</div>
                 <h3>House Washing</h3>
-                <p>Professional exterior cleaning services to keep your home's siding, windows, and outdoor surfaces spotless.</p>
+                <p>Professional exterior cleaning services to keep your home's siding, windows, and outdoor surfaces spotless. House washing in Villa Rica, Hiram, Lithia Springs, and Douglasville.</p>
               </div>
             </ScrollAnimation>
             <ScrollAnimation delay={500}>
               <div className="service-card">
                 <div className="service-icon">🔧</div>
                 <h3>Yard Maintenance</h3>
-                <p>Comprehensive yard care including cleanup, mulching, seasonal preparation, and ongoing maintenance.</p>
+                <p>Comprehensive yard care including cleanup, mulching, seasonal preparation, and ongoing maintenance. Reliable yard maintenance services in Douglas County Georgia.</p>
               </div>
             </ScrollAnimation>
           </div>
@@ -238,14 +270,15 @@ const Home = () => {
         <div className="container">
           <ScrollAnimation>
             <div className="cta-content">
-              <h2>Ready to Transform Your Outdoor Space?</h2>
-              <p>Contact us today for a free consultation and quote on your exterior services needs.</p>
-              <Link to="/contact" className="btn btn-primary btn-large">Get Free Quote</Link>
+              <h2>Ready to Transform Your Outdoor Space in Douglasville, Villa Rica, Hiram, or Lithia Springs?</h2>
+              <p>Contact Aviles Exterior Services today for a free consultation and quote on your exterior services needs. Serving Douglas County GA with excellence.</p>
+              <Link to="/contact" className="btn btn-primary btn-large">Get Free Quote - (470) 526-3353</Link>
             </div>
           </ScrollAnimation>
         </div>
       </section>
     </div>
+    </>
   );
 };
 
