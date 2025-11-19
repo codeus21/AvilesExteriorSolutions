@@ -4,19 +4,6 @@
   "devCommand": "npm run dev",
   "installCommand": "npm install",
   "framework": "vite",
-  "redirects": [
-    {
-      "source": "/(.*)",
-      "has": [
-        {
-          "type": "host",
-          "value": "avilesexteriorservices.com"
-        }
-      ],
-      "destination": "https://www.avilesexteriorservices.com/:path*",
-      "permanent": true
-    }
-  ],
   "rewrites": [
     {
       "source": "/(.*)",
