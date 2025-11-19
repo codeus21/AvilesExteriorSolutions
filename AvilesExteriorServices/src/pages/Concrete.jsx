@@ -30,7 +30,7 @@ const Concrete = () => {
         title="Concrete Services Douglasville GA | Villa Rica, Hiram, Lithia Springs | Aviles Exterior Services"
         description="Professional concrete installation services in Douglasville, Villa Rica, Hiram & Lithia Springs GA. Expert concrete pathways, driveways, patios & more. Free quotes! Call (470) 526-3353."
         keywords="concrete services Douglasville GA, concrete pathways Villa Rica, concrete driveways Hiram, concrete patios Lithia Springs, concrete installation Douglas County GA, professional concrete Douglasville"
-        canonical="https://avilesexteriorservices.com/services/concrete"
+        canonical="https://www.avilesexteriorservices.com/services/concrete"
         structuredData={structuredData}
       />
       <div className="service-page">

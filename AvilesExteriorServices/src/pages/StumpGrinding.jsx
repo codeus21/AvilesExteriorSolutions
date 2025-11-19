@@ -29,7 +29,7 @@ const StumpGrinding = () => {
         title="Stump Grinding Services Douglasville GA | Villa Rica, Hiram, Lithia Springs | Aviles Exterior Services"
         description="Professional stump grinding services in Douglasville, Villa Rica, Hiram & Lithia Springs GA. Expert stump removal for clean, usable yards. Free quotes! Call (470) 526-3353."
         keywords="stump grinding Douglasville GA, stump removal Villa Rica, stump grinding Hiram, stump grinding Lithia Springs, stump removal Douglas County GA, professional stump grinding Douglasville"
-        canonical="https://avilesexteriorservices.com/services/stump-grinding"
+        canonical="https://www.avilesexteriorservices.com/services/stump-grinding"
         structuredData={structuredData}
       />
       <div className="service-page">
