@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import CountUpStat from '../components/CountUpStat';
 import concreteImage from '../assets/Gallery/concretepath1.jpg';
 import concreteImage1 from '../assets/Gallery/concretepath2.jpg';
@@ -178,7 +179,7 @@ const Projects = () => {
           <div className="cta-content">
             <h2>Ready to Transform Your Outdoor Space?</h2>
             <p>Let us help bring your exterior vision to life with professional lawn care and maintenance services.</p>
-            <button className="btn btn-primary btn-large">Get Free Quote</button>
+            <Link to="/contact" className="btn btn-primary btn-large">Get Free Quote</Link>
           </div>
         </div>
       </section>
